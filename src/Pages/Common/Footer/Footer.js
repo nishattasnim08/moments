@@ -4,7 +4,6 @@ import facebook from '../../../images/icons/facebook-brands.png'
 import instagram from '../../../images/icons/instagram-brands.png'
 import linkedin from '../../../images/icons/linkedin-in-brands.png'
 import mail from '../../../images/icons/envelope-solid.png'
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
