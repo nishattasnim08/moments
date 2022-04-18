@@ -1,0 +1,12 @@
+.footer-content{
+    display: flex;
+}
+.footer-content a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.footer-icons img{
+    height: 20px;
+    margin: 0 5px;
+}

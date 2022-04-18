@@ -8,6 +8,7 @@ import SignUp from './Pages/Authentication/SignUp/SignUp';
 import About from './Pages/About/About'
 import Blog from './Pages/Blog/Blog'
 import ServiceCheckOut from './Pages/ServiceCheckOut/ServiceCheckOut';
+import Footer from './Pages/Common/Footer/Footer';
 
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="*" element={<NotFound></NotFound>} />
       </Routes>
+      
+      <Footer></Footer>
     </div>
   );
 }
