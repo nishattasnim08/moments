@@ -40,7 +40,7 @@ navigate('/signup');
                         Sign In
                     </Button>
                 </Form>
-                <p>Do not have account? <Link to="/signup" className='text-danger pe-auto text-decoration-none' onClick={navigateSignUp}>Create an Account</Link> </p>
+                <p>Do not have an account? <Link to="/signup" className='text-danger pe-auto text-decoration-none' onClick={navigateSignUp}>Create an Account</Link> </p>
             </div>
         </div>
     );
