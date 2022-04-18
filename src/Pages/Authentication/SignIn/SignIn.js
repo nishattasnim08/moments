@@ -1,8 +1,11 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
 
 const SignIn = () => {
+    const [signInWithGoogle, user1, loading1, error1] = useSignInWithGoogle(auth);
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate = useNavigate()
@@ -39,6 +42,7 @@ navigate('/signup');
                     <Button variant="primary" type="submit">
                         Sign In
                     </Button>
+                    <button onClick={() => signInWithGoogle()}>Google Sign In</button>
                 </Form>
                 <p>Do not have an account? <Link to="/signup" className='text-danger pe-auto text-decoration-none' onClick={navigateSignUp}>Create an Account</Link> </p>
             </div>

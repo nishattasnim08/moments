@@ -9,6 +9,7 @@ import About from './Pages/About/About'
 import Blog from './Pages/Blog/Blog'
 import ServiceCheckOut from './Pages/ServiceCheckOut/ServiceCheckOut';
 import Footer from './Pages/Common/Footer/Footer';
+import RequireAuth from './RequireAuth';
 
 
 function App() {
@@ -19,14 +20,18 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/service/:serviceId" element={<ServiceCheckOut />} />
+        <Route path="/service/:serviceId" element={
+          <RequireAuth>
+            <ServiceCheckOut />
+          </RequireAuth>
+        } />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="*" element={<NotFound></NotFound>} />
       </Routes>
-      
+
       <Footer></Footer>
     </div>
   );
