@@ -7,6 +7,7 @@ import SignIn from './Pages/Authentication/SignIn/SignIn';
 import SignUp from './Pages/Authentication/SignUp/SignUp';
 import About from './Pages/About/About'
 import Blog from './Pages/Blog/Blog'
+import ServiceCheckOut from './Pages/ServiceCheckOut/ServiceCheckOut';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/service/:serviceId" element={<ServiceCheckOut />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/signin" element={<SignIn />} />

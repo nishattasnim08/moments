@@ -1,0 +1,14 @@
+.service button{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: indianred;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px;
+}
+.service button:hover{
+    background-color: salmon;
+    color: black;
+}
